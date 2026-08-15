@@ -1,0 +1,96 @@
+@use "../abstracts/mixins" as *;
+
+.navbar {
+  position: absolute;
+  top: 100%;
+
+  transform: translateX(100%);
+
+  z-index: 100;
+
+  width: 100%;
+  height: 50vh;
+
+  background: var(--color-surface);
+
+  border-bottom: 1px solid var(--primary);
+  border-bottom-left-radius: var(--radius-lg);
+  border-bottom-right-radius: var(--radius-lg);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 350ms ease,
+    transform 0.7s ease,
+    visibility 250ms ease;
+}
+
+.nav-toggle__input:checked ~ .navbar {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transform: translateX(calc(-1 * var(--space-4)));
+}
+
+.nav-list {
+  width: 100%;
+  height: 100%;
+  padding: var(--space-6);
+
+  @include flex(column);
+  gap: var(--space-10);
+}
+
+.nav-link a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--primary);
+
+  color: var(--color-text);
+  font-weight: bold;
+
+  border-radius: var(--radius-md);
+
+  transition:
+    color 200ms ease,
+    background-color 200ms ease;
+}
+
+.nav-link a.active,
+.nav-link a:hover {
+  color: #ff6347;
+}
+
+.nav-link a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    position: static;
+
+    width: 100%;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: none;
+
+    background: transparent;
+    border: none;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+}

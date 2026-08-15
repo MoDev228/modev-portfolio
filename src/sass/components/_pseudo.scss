@@ -1,0 +1,43 @@
+.title-category::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+
+  width: 30px;
+  height: 2px;
+
+  transform: translateY(4px);
+
+  background: var(--primary);
+}
+
+.about-title::before,
+.project-title::before,
+.contact-title::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+
+  width: 35%;
+  height: 5px;
+
+  background: var(--primary);
+  border-radius: var(--radius-md);
+}
+
+
+.about-title::after,
+.project-title::after,
+.contact-title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+
+  width: 25%;
+  height: 5px;
+
+  transform: translateY(10px);
+
+  background: var(--primary);
+  border-radius: var(--radius-md);
+}

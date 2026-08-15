@@ -1,0 +1,68 @@
+body {
+  font-family: var(--font-primary);
+  line-height: var(--line-height-body);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+}
+
+h4 {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+.home-infos > span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.code,
+.tech,
+.technology {
+  font-family: var(--font-mono);
+}
+
+.about-title,
+.project-title,
+.contact-title {
+  display: inline-flex;
+  text-transform: uppercase;
+
+  position: relative;
+}
+
+.title-category {
+  display: inline-flex;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+
+  position: relative;
+}
+

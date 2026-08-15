@@ -1,0 +1,210 @@
+:root {
+  /* =========================
+     BASE COLORS
+     ========================= */
+
+  --color-bg: #0b0f19;
+  --color-surface: #151b2b;
+
+  --color-primary: #38bdf8;
+  --color-secondary: #020202;
+
+  --color-text: #f8fafc;
+
+  /* =========================
+     TEXT
+     ========================= */
+
+  --text-primary: var(--color-text);
+
+  --text-secondary: oklch(from var(--color-text) l c h / 0.7);
+
+  --text-muted: oklch(from var(--color-text) l c h / 0.5);
+
+  /* =========================
+     PRIMARY
+     ========================= */
+
+  --primary: var(--color-primary);
+
+  --primary-hover: oklch(from var(--color-primary) calc(l - 0.08) c h);
+
+  --primary-active: oklch(from var(--color-primary) calc(l - 0.15) c h);
+
+  --primary-soft: oklch(from var(--color-primary) l c h / 0.12);
+
+  /* =========================
+     SECONDARY
+     ========================= */
+
+  --secondary: var(--color-secondary);
+
+  --secondary-hover: oklch(from var(--color-secondary) calc(l - 0.08) c h);
+
+  --secondary-soft: oklch(from var(--color-secondary) l c h / 0.12);
+
+  /* =========================
+     SURFACE
+     ========================= */
+
+  --surface: var(--color-surface);
+
+  --surface-hover: oklch(from var(--color-surface) calc(l + 0.04) c h);
+
+  /* =========================
+     FONT FAMILY
+     ========================= */
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Ubuntu Mono";
+    src: url("/fonts/UbuntuMono-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "My Soul";
+    src: url("/fonts/MySoul-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Lavishly Yours";
+    src: url("/fonts/LavishlyYours-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  --font-primary: "Poppins", sans-serif;
+  --font-mono: "Ubuntu Mono", monospace;
+  --font-script: "My Soul", cursive;
+  --font-display: "Lavishly Yours", cursive;
+
+  /* =========================
+     FONT SIZE
+     ========================= */
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3rem;
+
+  /* =========================
+     FONT WEIGHT
+     ========================= */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* =========================
+     LINE HEIGHT
+     ========================= */
+
+  --line-height-tight: 1.1;
+  --line-height-heading: 1.2;
+  --line-height-body: 1.6;
+
+  /* =========================
+     TYPOGRAPHIC ROLES
+     ========================= */
+
+  --text-display-size: clamp(2.25rem, 5vw, 4rem);
+
+  --text-display-weight: var(--font-weight-bold);
+  --text-display-line-height: var(--line-height-tight);
+
+  --text-h2-size: clamp(1.75rem, 3vw, 2.5rem);
+
+  --text-h2-weight: var(--font-weight-bold);
+
+  --text-h3-size: 1.5rem;
+  --text-h3-weight: var(--font-weight-semibold);
+
+  --text-body-size: 1rem;
+  --text-body-weight: var(--font-weight-regular);
+
+  --text-small-size: var(--font-size-sm);
+
+  /* =========================
+     SPACING
+     ========================= */
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* =========================
+     RADIUS
+     ========================= */
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* =========================
+     BORDERS
+     ========================= */
+
+  --border-subtle: oklch(from var(--color-text) l c h / 0.1);
+
+  --border-default: oklch(from var(--color-text) l c h / 0.16);
+
+  --border-strong: oklch(from var(--color-text) l c h / 0.25);
+
+  /* =========================
+     SHADOWS
+     ========================= */
+
+  --shadow-sm: 0 1px 20px rgb(0 0 0 / 0.2);
+
+  --shadow-md: 0 4px 12px rgb(0 0 0 / 0.25);
+
+  --shadow-lg: 0 12px 30px rgba(245, 245, 245, 0.3);
+
+  /* =========================
+     TRANSITIONS
+     ========================= */
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* =========================
+     CONTAINER
+     ========================= */
+
+  --container-width: 1200px;
+  --sidebar-width: 250px;
+  --container-padding: 1.5rem;
+}
