@@ -1,12 +1,568 @@
+<!-- ================================ 
+ بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ 
+ ============================ -->
+
 <!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MoDev - Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio de Mohamed Boukari - Développeur d'applications web fullstack. Découvrez mes projets et compétences en développement web moderne."
+    />
+    <title>MoDev - Portfolio de Mohamed Boukari</title>
+
+    <!-- ==================== FONTAWSOME CDN ====================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <div class="main-container">
+      <header class="header">
+        <!-- ============= LOGO ============== -->
+        <div class="logo">
+          <a href="#home">
+            <span>MoDev</span>
+          </a>
+        </div>
+
+        <!-- ============ MENU TOGGLE ============== -->
+        <input
+          type="checkbox"
+          name="toggle"
+          id="toggle"
+          class="nav-toggle__input"
+        />
+
+        <label
+          for="toggle"
+          class="nav-toggle__label"
+          aria-label="Ouvrir le menu de navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- ================ NAVBAR ==================== -->
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li class="nav-link">
+              <a href="#home" class="active">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span>Accueil</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#about">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span>À Propos</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#projet">
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <span>Projets</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#contact">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-content">
+        <section class="home section" id="home">
+          <div class="container home-container">
+            <div class="home-content">
+              <article class="home-infos">
+                <span>Salut, je suis</span>
+                <h1>BOUKARI Mohamed</h1>
+                <h2>Développeur d'Application</h2>
+                <p>
+                  Je conçois des applications web modernes, performantes et
+                  accessibles, avec une attention particulière portée à la
+                  qualité du code et à l'expérience utilisateur.
+                </p>
+                <a href="#contact" class="btn">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>Me contacter</span>
+                </a>
+              </article>
+              <article class="home-image">
+                <picture>
+                  <img
+                    src="images/modev.png"
+                    alt="Portrait de Mohamed Boukari, développeur d'applications"
+                  />
+                  <img src="images/flotte.png" alt="" />
+                </picture>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====================== A PROPOS ============== -->
+        <section class="about section" id="about">
+          <div class="container about-container">
+            <div class="about-content">
+              <div class="about-title">
+                <h2>À Propos de Moi</h2>
+              </div>
+              <div class="about-desc">
+                <div class="bio">
+                  <div class="bio-title">
+                    <h3>Développeur d'Application</h3>
+                  </div>
+                  <p>
+                    Je suis Mohamed Boukari, étudiant en informatique et
+                    développeur d'applications. Je m'intéresse particulièrement
+                    à la conception et au développement de solutions web utiles,
+                    structurées et évolutives.
+                  </p>
+                  <p>
+                    À travers mes projets personnels et mon parcours en
+                    Développement d'Application, je cherche à renforcer mes
+                    compétences, approfondir ma compréhension du développement
+                    logiciel et construire progressivement des applications
+                    fiables, sécurisées et adaptées aux besoins réels.
+                  </p>
+                  <p>
+                    Je suis constamment dans une démarche d'apprentissage, de
+                    pratique et d'amélioration, avec l'objectif de devenir un
+                    développeur capable de concevoir des applications de
+                    qualité, du frontend au backend.
+                  </p>
+                  <div class="about-btn">
+                    <a href="docs/CV_Mohamed_BOUKARI.pdf" download class="btn">
+                      <i class="fa-solid fa-cloud-arrow-down"></i>
+                      <span>Mon CV</span>
+                    </a>
+                    <a href="#contact" class="btn">
+                      <i class="fa-solid fa-envelope"></i>
+                      <span>Me contacter</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="tech">
+                  <div class="tech-title">
+                    <h2>Technologies</h2>
+                  </div>
+                  <div class="tech-grid">
+                    <article class="tech-category">
+                      <h3 class="title-category">Frontend</h3>
+                      <ul class="list-category">
+                        <li class="icon-category">
+                          <i
+                            class="fa-brands fa-html5"
+                            title="HTML5"
+                            style="color: #ff6347"
+                          ></i>
+                          <span>HTML5</span>
+                        </li>
+                        <li class="icon-category">
+                          <i
+                            class="fa-brands fa-css3-alt"
+                            title="CSS3"
+                            style="color: #00ffff"
+                          ></i>
+                          <span>CSS3</span>
+                        </li>
+                        <li class="icon-category">
+                          <i
+                            class="fa-brands fa-js"
+                            title="JavaScript"
+                            style="color: #ffff00"
+                          ></i>
+                          <span>JavaScript</span>
+                        </li>
+                        <li class="icon-category">
+                          <i
+                            class="fa-brands fa-tailwind-css"
+                            style="color: #00ffff"
+                          ></i>
+                          Tailwind
+                        </li>
+                        <li class="icon-category">
+                          <i
+                            class="fa-brands fa-sass"
+                            style="color: rgb(247, 140, 158)"
+                          ></i>
+                          SASS
+                        </li>
+                      </ul>
+                    </article>
+                    <article class="tech-category">
+                      <h3 class="title-category">Backend</h3>
+                      <ul class="list-category">
+                        <li class="icon-category">
+                          <i class="fa-brands fa-node" title="Node.js"></i>
+                          <span>Node.js</span>
+                        </li>
+                        <li class="icon-category">
+                          <i
+                            class="fa-brands fa-node-js"
+                            title="Express.js"
+                          ></i>
+                          <span>Express</span>
+                        </li>
+                        <li class="icon-category">
+                          <i class="fa-brands fa-php" title="PHP"></i>
+                          <span>PHP</span>
+                        </li>
+                        <li class="icon-category">
+                          <i class="fa-brands fa-python" title="Python"></i>
+                          <span>Python</span>
+                        </li>
+                      </ul>
+                    </article>
+                    <article class="tech-category">
+                      <h3 class="title-category">Base de données</h3>
+                      <ul class="list-category">
+                        <li class="icon-category">
+                          <i class="fa-solid fa-database" title="MySQL"></i>
+                          <span>MySQL</span>
+                        </li>
+                        <li class="icon-category">
+                          <i class="fa-solid fa-leaf" title="MongoDB"></i>
+                          <span>MongoDB</span>
+                        </li>
+                        <li class="icon-category">
+                          <i class="fa-solid fa-server" title="PostgreSQL"></i>
+                          <span>PostgreSQL</span>
+                        </li>
+                        <li class="icon-category">
+                          <i class="fa-solid fa-table" title="SQLite"></i>
+                          <span>SQLite</span>
+                        </li>
+                      </ul>
+                    </article>
+                    <article class="tech-category">
+                      <h3 class="title-category">Langages</h3>
+                      <ul class="list-category">
+                        <li class="icon-category">
+                          <i class="fa-brands fa-js" title="JavaScript"></i>
+                          <span>JavaScript</span>
+                        </li>
+                        <li class="icon-category">
+                          <i class="fa-brands fa-python" title="Python"></i>
+                          <span>Python</span>
+                        </li>
+                        <li class="icon-category">
+                          <i class="fa-brands fa-php" title="PHP"></i>
+                          <span>PHP</span>
+                        </li>
+                        <li class="icon-category">
+                          <i class="fa-solid fa-code" title="SQL"></i>
+                          <span>SQL</span>
+                        </li>
+                      </ul>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====================== PROJETS ============== -->
+        <section class="project section" id="projet">
+          <div class="project-container container">
+            <article class="project-content">
+              <div class="project-title">
+                <h2>Mes Projets</h2>
+              </div>
+              <div class="project-grid">
+                <div class="cards">
+                  <!-- Projet 1 -->
+                  <div class="project-card">
+                    <img
+                      src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop"
+                      alt="Aperçu de l'application TaskFlow - Gestionnaire de tâches"
+                      class="project-card-image"
+                    />
+                    <div class="card-desc">
+                      <h3>TaskFlow</h3>
+                      <p>
+                        Application de gestion de tâches collaborative
+                        permettant de créer, organiser et suivre l'avancement de
+                        projets en équipe. Interface intuitive avec drag & drop
+                        et tableau Kanban.
+                      </p>
+                      <div class="tech-use">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Express</span>
+                      </div>
+                      <div class="card-btn">
+                        <a
+                          href="https://github.com/mohamedboukari/taskflow"
+                          target="_blank"
+                          class="btn-link"
+                          ><i class="fa-brands fa-github"></i> Code</a
+                        >
+                        <a
+                          href="https://taskflow-demo.vercel.app"
+                          target="_blank"
+                          class="btn-link"
+                          ><i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                          ></i>
+                          Demo</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Projet 2 -->
+                  <div class="project-card">
+                    <img
+                      src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop"
+                      alt="Aperçu de ShopExpress - Plateforme e-commerce"
+                      class="project-card-image"
+                    />
+                    <div class="card-desc">
+                      <h3>ShopExpress</h3>
+                      <p>
+                        Plateforme e-commerce complète avec panier d'achat,
+                        système de paiement intégré, gestion des stocks et
+                        tableau de bord administrateur. Design responsive et
+                        optimisé pour le mobile.
+                      </p>
+                      <div class="tech-use">
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Bootstrap</span>
+                      </div>
+                      <div class="card-btn">
+                        <a
+                          href="https://github.com/mohamedboukari/shopExpress"
+                          target="_blank"
+                          class="btn-link"
+                          ><i class="fa-brands fa-github"></i> Code</a
+                        >
+                        <a
+                          href="https://shopexpress-demo.herokuapp.com"
+                          target="_blank"
+                          class="btn-link"
+                          ><i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                          ></i>
+                          Demo</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Projet 3 -->
+                  <div class="project-card">
+                    <img
+                      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
+                      alt="Aperçu de WeatherDash - Application météo"
+                      class="project-card-image"
+                    />
+                    <div class="card-desc">
+                      <h3>WeatherDash</h3>
+                      <p>
+                        Application météo temps réel utilisant une API externe
+                        pour afficher les prévisions sur 7 jours.
+                        Géolocalisation automatique, graphiques de température
+                        et alertes météorologiques.
+                      </p>
+                      <div class="tech-use">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">API REST</span>
+                      </div>
+                      <div class="card-btn">
+                        <a
+                          href="https://github.com/mohamedboukari/weatherdash"
+                          target="_blank"
+                          class="btn-link"
+                          ><i class="fa-brands fa-github"></i> Code</a
+                        >
+                        <a
+                          href="https://weatherdash-demo.netlify.app"
+                          target="_blank"
+                          class="btn-link"
+                          ><i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                          ></i>
+                          Demo</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ====================== CONTACT ============== -->
+        <section class="contact section" id="contact">
+          <div class="container contact-container">
+            <div class="contact-content">
+              <div class="contact-title">
+                <h2>Contactez-Moi</h2>
+              </div>
+
+              <article class="adress">
+                <div class="address-text">
+                  <h3>Restons en Contact</h3>
+                  <h4>
+                    N'hésitez pas à me contacter pour toute opportunité de
+                    collaboration, projet ou simplement pour échanger sur le
+                    développement web.
+                  </h4>
+                </div>
+
+                <div class="contact-infos">
+                  <article class="contact-infos-item">
+                    <div class="icon-info">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h4>Localisation</h4>
+                    <p>Paris, France</p>
+                  </article>
+                  <article class="contact-infos-item">
+                    <div class="icon-info">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <p>
+                      <a href="mailto:mohamed.boukari.dev@gmail.com"
+                        >mohamed.boukari.dev@gmail.com</a
+                      >
+                    </p>
+                  </article>
+                  <article class="contact-infos-item">
+                    <div class="icon-info">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h4>Téléphone</h4>
+                    <p><a href="tel:+33612345678">+33 6 12 34 56 78</a></p>
+                  </article>
+                </div>
+
+                <div class="social-links">
+                  <a
+                    href="https://github.com/mohamedboukari"
+                    target="_blank"
+                    aria-label="GitHub"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a
+                    href="https://linkedin.com/in/mohamedboukari"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://twitter.com/mohamedboukari"
+                    target="_blank"
+                    aria-label="Twitter"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                </div>
+              </article>
+
+              <article class="form-section">
+                <div class="form-section-title">
+                  <h3>Envoyez-moi un Message</h3>
+                  <h4>Je vous répondrai dans les plus brefs délais.</h4>
+                </div>
+
+                <div class="form-content">
+                  <form action="" method="post" class="form">
+                    <div class="row">
+                      <article class="input-name">
+                        <label for="name">Nom</label>
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          placeholder="Entrez votre nom..."
+                          required
+                        />
+                      </article>
+                      <article class="input-email">
+                        <label for="email">Email</label>
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          placeholder="Entrez votre email..."
+                          required
+                        />
+                      </article>
+                    </div>
+                    <div class="row">
+                      <article class="input-subject">
+                        <label for="subject">Sujet</label>
+                        <input
+                          type="text"
+                          name="subject"
+                          id="subject"
+                          placeholder="Le sujet de votre message..."
+                        />
+                      </article>
+                    </div>
+                    <div class="row">
+                      <article class="input-message">
+                        <label for="message">Message</label>
+                        <textarea
+                          name="message"
+                          id="message"
+                          rows="6"
+                          placeholder="Votre message..."
+                          required
+                        ></textarea>
+                      </article>
+                    </div>
+                    <div class="row">
+                      <button type="submit" class="btn-submit">
+                        <i class="fa-solid fa-paper-plane"></i> Envoyer le
+                        Message
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- ====================== FOOTER ============== -->
+      <footer class="footer">
+        <div class="container">
+          <p>
+            &copy; 2026 Mohamed Boukari. Tous droits réservés. | Conçu et
+            développé avec <i class="fa-solid fa-heart"></i> par MoDev
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- =============== JS Module ============== -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
