@@ -48,9 +48,66 @@
   gap: 0.5rem;
 }
 
-
 .icon-category {
   padding: 0.1rem 0.4rem;
-  border: 1px solid var(--primary);
+  // border: 1px solid var(--primary);
   border-radius: 9999px;
+}
+
+.card-btn {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin-top: 1rem;
+}
+
+.card-btn a {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 0.4rem 0.8rem;
+
+  background: transparent;
+  border-radius: 9999px;
+
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+
+  cursor: pointer;
+}
+
+.card-btn a:hover {
+  background: var(--color-secondary);
+  transform: translateY(-2px);
+}
+
+.card-btn a:first-child:hover {
+  color: var(--primary);
+}
+
+.card-btn a:last-child:hover {
+  color: #ff6347;
+}
+
+.btn-submit {
+  background: var(--primary);
+  border: none;
+
+  padding: 0.7rem 1.4rem;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border-radius: var(--radius-lg);
+}
+
+.btn-submit:active {
+  transform: scale(0.98);
+  filter: brightness(0.9);
+  opacity: 0.85;
 }

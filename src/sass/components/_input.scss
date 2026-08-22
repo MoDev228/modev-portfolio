@@ -1,0 +1,14 @@
+input,
+textarea {
+  width: 100%;
+  background: var(--color-surface);
+  padding: 1rem;
+
+  border-radius: var(--radius-lg);
+
+  border: none;
+  outline: none;
+
+  color: var(--color-text);
+  
+}
