@@ -1,2 +1,2 @@
 import "./sass/_main.scss";
-import "../public/js/navlinks.js";
+import "./js/navlinks.js";
