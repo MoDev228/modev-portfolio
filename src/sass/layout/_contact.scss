@@ -15,7 +15,6 @@
 }
 
 .address-text h4 {
-  width: 36ch;
 }
 
 .contact-infos {
@@ -104,4 +103,12 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+@media (min-width: 992px) {
+  .grid-contact {
+    grid-template-columns: 1fr 1fr;
+
+    text-align: center;
+  }
 }

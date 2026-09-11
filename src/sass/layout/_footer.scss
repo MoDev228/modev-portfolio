@@ -1,0 +1,21 @@
+footer {
+  background: var(--color-surface);
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .container {
+  text-align: center;
+
+  a {
+    text-decoration: underline;
+    color: var(--primary);
+  }
+}
