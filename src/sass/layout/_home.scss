@@ -34,9 +34,9 @@
 }
 
 .home-infos > span {
-    display: block;
+  display: block;
 
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .home-infos h2 {
@@ -54,24 +54,15 @@
 .home-image {
   width: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
 
   img {
     max-width: 280px;
-    aspect-ratio: 1;
+    aspect-ratio: 5 / 7;
 
     object-fit: cover;
   }
 }
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 768px) {
   .home-content {
@@ -95,13 +86,4 @@
     flex: 0 0 auto;
     width: auto;
   }
-}
-
-picture {
-    position: relative;
-}
-
-picture img:last-child {
-    position: absolute;
-    top: 0;
 }
